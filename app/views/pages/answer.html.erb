@@ -1,8 +1,14 @@
-<h1>Answer Page</h1>
-
-<%= link_to "Ask again", ask_path %>
-<p>Your Question</p>
+<h2 style="color: grey">💖 Answer Page 💖</h2>
+<br>
+<div class="container" id="question">
+<h4>Your Question🧐</h4>
 <p><%= params[:question] %></p>
+</div>
 
-<p>Coach's answer</p>
+<div class="container" id="answer">
+<h4>Coach's answer🧚🏻‍♀️</h4>
 <p><%= @answer %></p>
+</div>
+<div>
+<%= link_to "Ask again", ask_path %>
+</div>
